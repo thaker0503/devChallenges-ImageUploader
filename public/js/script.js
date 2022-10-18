@@ -45,7 +45,7 @@ function displayImg(url) {
                 </div>
                 <div class="upload-btn-wrapper">
                     <span class="upload-or">
-                        <input type="text" value=${url} id="imgUrl" disabled />
+                        <input type="text" value=${url} id="imgUrl" readonly />
                     </span>
                     <span class="copy-btn" onclick="copyText();">
                         Share Image
