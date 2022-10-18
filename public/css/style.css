@@ -1,0 +1,190 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     background-color: #d7d7d730;
+     height: 100vh;
+ }
+
+ main {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .upload-wrapper {
+     width: 400px;
+     height: 470px;
+     background: #FFFFFF;
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px;
+     justify-content: space-around;
+     transition: all 10s ease-out;
+ }
+
+ .upload-title-wrapper {
+     /* width: 100%; */
+     font-size: 18px;
+ }
+
+ .upload-subtitle {
+     font-size: 10px;
+     color: #828282;
+ }
+
+ .upload-canvas-inner-title {
+     font-size: 12px;
+     color: #828282;
+ }
+
+ .upload-btn-wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 101px;
+     height: 81px;
+     align-items: center;
+     margin-top: 20px;
+     justify-content: space-between;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .upload-or {
+     color: #828282;
+     font-size: 12px;
+ }
+
+ .upload-btn,.copy-btn {
+     width: 104px !important;
+     height: 33px !important;
+     font-size: 12px;
+     background: #2F80ED !important;
+     border-radius: 8px;
+     color: #FFFFFF !important;
+     padding: 9px 12px;
+     display: flex;
+     cursor: pointer;
+ }
+
+
+ .upload-canvas-wrapper {
+    width: 340px;
+    height: 220px;
+    border-radius: 12px;
+ }
+
+ .upload-canvas-wrapper > img {
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+ .upload-canvas,.upload-canvas1 {
+     height: 100%;
+     width: 100%;
+     background: #F6F8FB;
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .upload-canvas{
+    border: 1px dashed #97BEF4;
+ }
+
+ .outputImg {
+     width: 100%;
+     height: 100%;
+     image-orientation: from-image;
+     image-resolution: initial;
+ }
+
+ .upload-canvas-drop-area {
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     position: absolute;
+ }
+
+ .uploading-loader-prompt {
+     width: 400px;
+     height: 145px;
+     background: #FFFFFF;
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+     border-radius: 12px;
+     padding: 0px 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition: all 10s ease-in;
+ }
+
+ .prompt-text-wrapper {
+     width: 100%;
+ }
+
+ .prompt-text {
+     width: 100%;
+     text-align: left;
+     /* width: 105px; */
+     height: 27px;
+     color: #4F4F4F;
+     font-weight: 400;
+     font-size: 18px;
+     /* background-color: #2F80ED; */
+ }
+
+ .prompt-bar {
+     background: #F2F2F2;
+     border-radius: 8px;
+     width: 100%;
+     height: 6px;
+     position: relative;
+     margin-top: 45px;
+     overflow: hidden;
+ }
+
+ .prompt-inner-bar {
+     width: 100px;
+     height: 6px;
+     background: #2F80ED;
+     border-radius: 8px;
+     position: absolute;
+     animation: loading 2s linear infinite;
+ }
+
+ /* .uploaded-image{
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+ } */
+
+ @keyframes loading {
+     0% {
+         left: -50%;
+     }
+
+     100% {
+         left: 100%;
+     }
+ }

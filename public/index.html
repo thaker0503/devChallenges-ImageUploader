@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./css/images/icons8-image-16.png">
+    <script src="./js/script.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="upload-wrapper">
+            <div class="upload-title-wrapper">
+                <span class="upload-title">
+                    Upload your image
+                </span>
+            </div>
+            <div class="upload-subtitle-wrapper">
+                <div class="upload-subtitle">
+                    File should be in JPEG or PNG...
+                </div>
+            </div>
+            <form enctype="multipart/form-data">
+                <div class="upload-canvas-wrapper">
+                    <div class="upload-canvas">
+                        <input type="file" name="uploadedImg" id="uploadedImg" class="upload-canvas-drop-area" accept="image/*" />
+                        <div class="upload-canvas-inner-image">
+                            <img src="./css/images/image.svg" alt="">
+                        </div>
+                        <div class="upload-canvas-inner-title">
+                            Drag and Drop your image here
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-btn-wrapper">
+                    <span class="upload-or">
+                        Or
+                    </span>
+                    <span class="upload-btn" id="uploadBtn">
+                        Choose a File
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
