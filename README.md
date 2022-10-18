@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://dev-challenges-image-uploader.herokuapp.com/">
+    <a href="https://dev-challenges-image-uploader.herokuapp.com/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/thaker0503/devChallenges-Image-Uploader">
+    <a href="https://github.com/thaker0503/devChallenges-ImageUploader" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx">
+    <a href="https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx" target="_blank">
       Challenge
     </a>
   </h3>
